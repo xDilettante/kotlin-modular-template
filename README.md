@@ -23,7 +23,7 @@ xProject/
 
 ## Ключевые особенности
 
-- **Kotlin 2.2.20** + **JDK 21** (автоматическое управление через Foojay Toolchain Resolver)
+- **Kotlin 2.3.0** + **JDK 21** (автоматическое управление через Foojay Toolchain Resolver)
 - **Gradle 9.2.1** с Version Catalog для централизованного управления версиями
 - Готовые зависимости для:
   - Ktor 3.3.1 (HTTP-сервер/клиент)
@@ -53,16 +53,17 @@ cd kotlin-modular-template
 
 Ожидаемый вывод:
 ```
-[main] INFO  Main - Starting...
-[main] DEBUG Main - Sleep now 5s
-[main] DEBUG Main - Sleep 5s End
-[main] INFO  Main - "Hello, world!"
+INFO  2025-12-26 01:30:22,606 Main [main] - Starting...
+DEBUG 2025-12-26 01:30:22,607 Main [main] - Sleep now 2s
+
+DEBUG 2025-12-26 01:30:27,612 Main [kotlinx.coroutines.DefaultExecutor] - Sleep 2s End
+INFO  2025-12-26 01:30:27,613 Main [kotlinx.coroutines.DefaultExecutor] - "Hello, world!""
 ```
 
 ## Добавление нового модуля
 
 1. Скопируйте папку `xEmpty` и переименуйте (например, `xNewFeature`).
-2. Добавьте строку в `settings.gradle.kts`:
+2. Добавьте строку в `settings.gradle.kts` корневого проекта:
    ```kotlin
    include("xNewFeature")
    ```
