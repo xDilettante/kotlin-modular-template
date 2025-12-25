@@ -1,0 +1,18 @@
+<configuration>
+    <conversionRule conversionWord="xcolor" class="xlogback.HighlightingCompositeConverterEx" />
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %xcolor(%-5level) %white(%d) %magenta(%logger{24}) %cyan([%thread]) - %xcolor(%msg%n)
+            </pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>TRACE</level>
+        </filter>
+    </appender>
+
+    <root level="TRACE">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

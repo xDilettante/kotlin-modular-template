@@ -1,0 +1,1 @@
+fun getMyText(): String = "Hello, world!"
