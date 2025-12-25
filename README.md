@@ -4,7 +4,7 @@
 
 Идеален как стартовая точка для backend-приложений, Telegram-ботов, REST/gRPC-сервисов и микросервисов.
 
-[![Kotlin](https://img.shields.io/badge/Kotlin-2.2.20-blue.svg)](https://kotlinlang.org)
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.3.0-blue.svg)](https://kotlinlang.org)
 [![JDK](https://img.shields.io/badge/JDK-21-green.svg)](https://adoptium.net/)
 [![Gradle](https://img.shields.io/badge/Gradle-9.2.1-blue.svg)](https://gradle.org)
 [![License](https://img.shields.io/github/license/xDilettante/kotlin-modular-template)](LICENSE)
