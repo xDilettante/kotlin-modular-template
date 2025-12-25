@@ -1,4 +1,3 @@
-```markdown
 # Kotlin Modular Template
 
 Мультимодульный шаблон проекта на **Kotlin/JVM** с современным подходом к управлению зависимостями через **Version Catalog**.
